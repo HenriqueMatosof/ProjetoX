@@ -1,0 +1,97 @@
+* {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+
+}
+
+.Play {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.Play:hover {
+    background-image: url(flork/handpainted.jpg);
+    border-radius: 10px;
+    font-size: xx-large
+}
+
+.Config {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+
+    background-image: url(flork/pixels.jpg);
+    color: white;
+    border: none;
+
+    cursor: pointer;
+}
+
+.Config:hover {
+    background-image: url(flork/handpainted.jpg);
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+
+.Info {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    background-image: url(flork/pixels.jpg);
+    color: white;
+    border: none;
+
+    cursor: pointer;
+}
+
+.Info:hover {
+    background-image: url(flork/handpainted.jpg);
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+body {
+  background-image: url(flork/batalha.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 210px;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
