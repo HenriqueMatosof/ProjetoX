@@ -79,8 +79,17 @@ body {
 }
 
 .menu {
+    display: flex; /* Deixa os botoes lado a lado e facilita o alinhamento entre eles */
     text-align: center;
-    margin-top: 210px;
+    margin-top: 370px;
+    justify-content: center; /* Centraiza horizontalmente */
+    gap: 150px; /* Altera o espaçamento entre os botões */
+}
+
+.menu button {
+    color: blueviolet; /* Altera a cor do texto */
+    font-size: 35px; /* Altera o tamanho do texto */
+    margin: 0px; /* Remove qualquer margem padrão */
 }
 
 footer {
