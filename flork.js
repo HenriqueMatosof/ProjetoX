@@ -177,6 +177,16 @@ function animate() {
   player.update()
   enemy.update()
 
+// Limite lateral do player
+  if (player.position.x < 0) player.position.x = 0
+if (player.position.x + player.width > canvas.width)
+  player.position.x = canvas.width - player.width
+
+// Limite lateral do inimigo
+if (enemy.position.x < 0) enemy.position.x = 0
+if (enemy.position.x + enemy.width > canvas.width)
+  enemy.position.x = canvas.width - enemy.width
+
   player.velocity.x = 0
   enemy.velocity.x = 0
 
