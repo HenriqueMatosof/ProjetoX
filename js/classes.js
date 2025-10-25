@@ -98,11 +98,27 @@ class Fighter extends Sprite {
     this.sprites = sprites
     this.dead = false
 
+    this.canAttack = true // impede ataques contínuos
+    this.attackCooldown = 400 // tempo de recarga em ms
+
+
     for (const sprite in this.sprites) {
       sprites[sprite].image = new Image()
       sprites[sprite].image.src = sprites[sprite].imageSrc
     }
   }
+
+ attack() {
+  if (!this.canAttack) return // se estiver no cooldown, não ataca
+  this.switchSprite('attack1')
+  this.isAttacking = true
+  this.canAttack = false
+
+  setTimeout(() => {
+    this.canAttack = true // libera para atacar de novo depois do cooldown
+  }, this.attackCooldown)
+}
+
 
   update() {
     this.draw()
@@ -127,11 +143,6 @@ class Fighter extends Sprite {
       this.velocity.y = 0
       this.position.y = 330
     } else this.velocity.y += gravity
-  }
-
-  attack() {
-    this.switchSprite('attack1')
-    this.isAttacking = true
   }
 
   takeHit() {
