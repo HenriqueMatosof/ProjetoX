@@ -1,2 +1,63 @@
-# ProjetoX
-Jogo de luta 
+# 🥊 Projeto X
+
+## Descrição do Projeto
+**Projeto X** é um jogo de luta que lembra os clássicos jogos de fliperama, feito para divertir as pessoas.  
+O objetivo é controlar os personagens e derrotar o adversário antes que ele acabe com sua vida.  
+
+---
+
+## Tecnologias Utilizadas
+- **HTML5** – Estrutura do jogo e elementos de interface.  
+- **CSS3** – Estilização do canvas, barra de vida, fundo e elementos do jogo.  
+- **JavaScript** – Lógica do jogo, movimentação, ataques, colisões e animações.  
+- **Canvas API** – Para desenhar sprites e criar a jogabilidade em 2D.  
+
+---
+
+## Estrutura do Projeto
+```
+ProjetoX/
+│
+├─ ajax/
+├─ flork/
+├─ img/
+├─ js/
+│   ├─ classes.js
+│   └─ utils.js
+├─ .gitattributes
+├─ .prettierrc
+├─ index.html
+├─ index1.html
+├─ license
+├─ logo.png
+├─ photoduo.png
+├─ README.md
+├─ script.js
+├─ script1.js
+├─ style.css
+└─ style1.css
+```
+
+---
+
+## Controles do Jogo
+**Player 1:**  
+- `A` → mover para a esquerda  
+- `D` → mover para a direita  
+- `W` → pular  
+- `Espaço` → atacar  
+
+**Player 2:**  
+- `Seta esquerda/direita` → mover  
+- `Seta para cima` → pular  
+- `Seta para baixo` → atacar  
+
+---
+
+## Funcionalidades
+- Movimentação dos personagens (frente, trás, pular).  
+- Sistema de ataque e colisão.  
+- Barra de vida dinâmica para cada jogador.  
+- Temporizador do jogo.  
+- Animações: atacar, pular, correr e morrer.  
+- Estados finais dos personagens: Player 1 fica de joelhos, Player 2 se deita ao morrer.  
