@@ -7,10 +7,11 @@ O objetivo é controlar os personagens e derrotar o adversário antes que ele ac
 ---
 
 ## Tecnologias Utilizadas
-- **HTML5** – Estrutura do jogo e elementos de interface.  
-- **CSS3** – Estilização do canvas, barra de vida, fundo e elementos do jogo.  
+- **HTML5** – Estrutura do menu, do jogo e elementos de interface.  
+- **CSS3** – Estilização do menu, canvas, HUD, barra de vida, fundo e botões.  
 - **JavaScript** – Lógica do jogo, movimentação, ataques, colisões e animações.  
 - **Canvas API** – Para desenhar sprites e criar a jogabilidade em 2D.  
+- **GSAP** – Animações da barra de vida e efeitos visuais.
 
 ---
 
@@ -61,3 +62,6 @@ ProjetoX/
 - Temporizador do jogo.  
 - Animações: atacar, pular, correr e morrer.  
 - Estados finais dos personagens: Player 1 fica de joelhos, Player 2 se deita ao morrer.  
+- HUD mostrando barras de vida e temporizador.
+- Limites de movimento para que os personagens não saiam da tela.  
+- Sistema de vitória, derrota e empate (tie).
