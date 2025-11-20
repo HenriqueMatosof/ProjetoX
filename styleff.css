@@ -8,18 +8,18 @@
 
 :root {
 
-  --primary-color: #9412ff;
-  --primary-dark: #7c0ad9;
-  --secondary-color: #0891b2;
-  --accent-color: #f59e0b;
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #13131a;
-  --bg-tertiary: #1c1c28;
-  --border-color: #2d2d3d;
-  --shadow-light: rgba(0, 0, 0, 0.3);
-  --shadow-medium: rgba(0, 0, 0, 0.4);
+--text-primary: #111111;
+--text-secondary: #444444;
+
+--bg-primary: #ffffff;
+--bg-secondary: #f3f3f8;
+--bg-tertiary: #ececf5;
+
+--border-color: #d7d7e5;
+
+--shadow-light: rgba(0, 0, 0, 0.1);
+--shadow-medium: rgba(0, 0, 0, 0.2);
+
 
   /* Gradientes corrigidos - Light Mode */
   --gradient-primary: linear-gradient(90deg, rgba(148, 18, 255, 1) 0%, rgba(148, 18, 255, 0.8) 100%);
