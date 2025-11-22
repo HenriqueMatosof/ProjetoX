@@ -342,3 +342,16 @@ window.addEventListener('keyup', (event) => {
       break
   }
 })
+  function gameOver(){
+  showGameoverScreen();
+  gameRunning = false;
+}
+  function newGame(){
+  resetGameState();
+  startGame();
+}
+function goToMenu()
+  {window.location.href="index1.html";
+
+
+}
