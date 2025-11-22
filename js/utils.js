@@ -46,3 +46,4 @@ function decreaseTimer() {
 function showGameOver() {
   document.getElementById("game-over").style.display = "block";
 }
+
