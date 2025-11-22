@@ -342,16 +342,10 @@ window.addEventListener('keyup', (event) => {
       break
   }
 })
-  function gameOver(){
-  showGameoverScreen();
-  gameRunning = false;
+function newGame() {
+  location.reload(); //reinicia o jogo
 }
-  function newGame(){
-  resetGameState();
-  startGame();
-}
-function goToMenu()
-  {window.location.href="index1.html";
 
-
+function goToMenu() {
+  window.location.href = "index1.html"; //  menu
 }
