@@ -10,8 +10,6 @@ O objetivo é controlar os personagens e derrotar o adversário antes que ele ac
 - **HTML5** – Estrutura do menu, do jogo e elementos de interface.  
 - **CSS3** – Estilização do menu, canvas, HUD, barra de vida, fundo e botões.  
 - **JavaScript** – Lógica do jogo, movimentação, ataques, colisões e animações.  
-- **Canvas API** – Para desenhar sprites e criar a jogabilidade em 2D.  
-- **GSAP** – Animações da barra de vida e efeitos visuais.
 
 ---
 
@@ -29,14 +27,17 @@ ProjetoX/
 ├─ .prettierrc
 ├─ index.html
 ├─ index1.html
+├─indexff.html
 ├─ license
 ├─ logo.png
 ├─ photoduo.png
 ├─ README.md
 ├─ script.js
 ├─ script1.js
+├─script2.js
 ├─ style.css
-└─ style1.css
+├─ style1.css
+└─styleff.css
 ```
 
 ---
@@ -65,3 +66,11 @@ ProjetoX/
 - HUD mostrando barras de vida e temporizador.
 - Limites de movimento para que os personagens não saiam da tela.  
 - Sistema de vitória, derrota e empate (tie).
+
+---
+
+## Membros/Usernames GitHub
+- Kauã Wesley - kauakw
+- Pedro Henrique - pedro202324
+- Henrique matos - Henrique Matosof
+- Lucas silva - mago1500
