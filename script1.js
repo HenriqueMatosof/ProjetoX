@@ -347,5 +347,5 @@ function newGame() {
 }
 
 function goToMenu() {
-  window.location.href = "index1.html"; //  menu
+  window.location.href = "index.html"; //  menu
 }
