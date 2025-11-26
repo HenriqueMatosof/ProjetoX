@@ -79,6 +79,11 @@ ProjetoX/
 
 ---
 
+## Link Deploy
+https://projetox-seven.vercel.app/
+
+---
+
 ## Membros/Usernames GitHub
 - Kauã Wesley - kauakw
 - Pedro Henrique - pedro202324
