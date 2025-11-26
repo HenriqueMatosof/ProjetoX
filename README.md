@@ -69,6 +69,16 @@ ProjetoX/
 
 ---
 
+## Como Rodar o Projeto Localmente 
+1. Clone o repositório 
+2. Acesse a pasta do projeto 
+3. Abra o arquivo index1.html no navegador
+ - Você pode abrir clicando duas vezes no arquivo.
+ - Se estiver usando o VS Code, pode abrir com Live Server:
+   Clique com o botão direito no arquivo e depois em → Open with Live Server.
+
+---
+
 ## Membros/Usernames GitHub
 - Kauã Wesley - kauakw
 - Pedro Henrique - pedro202324
