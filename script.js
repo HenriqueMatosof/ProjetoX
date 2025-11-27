@@ -463,5 +463,6 @@ function initEyeBlinkEffect() {
   })
 }
 
-// Inicializar o efeito quando a página carregar
-document.addEventListener("DOMContentLoaded", initEyeBlinkEffect)
+
+
+

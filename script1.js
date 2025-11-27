@@ -292,6 +292,7 @@ function animate() {
 
 animate()
 
+
 window.addEventListener('keydown', (event) => {
   if (!player.dead) {
     switch (event.key) {

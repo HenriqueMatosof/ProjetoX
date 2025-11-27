@@ -366,3 +366,21 @@ a {
         margin-top: 5px;
     }
 }
+.mute-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.2s;
+}
+
+.mute-btn:hover {
+  transform: scale(1.1);
+}
