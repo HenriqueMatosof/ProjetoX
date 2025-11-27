@@ -104,3 +104,248 @@ footer {
 a {
     text-decoration: none;
 }
+
+
+/* RESPONSIVIDADE */
+
+/* TABLET HORIZONTAL */
+@media (min-width: 1024px) and (max-width: 1368px) and (orientation: landscape) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        margin: 0;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 140px;          /* espaçamento entre botões */
+        margin-top: 500px;   /* ajuste da altura desejada */
+    }
+
+    .menu button {
+        font-size: 28px;
+        padding: 12px 18px;
+    }
+
+    h1 {
+        font-size: 44px;
+        margin-top: 40px;
+    }
+}
+
+/* TABLET VERTICAL */
+@media (min-width: 768px) and (max-width: 1368px) and (orientation: portrait) {
+body {
+    background-image: url(flork/batalha1.png);
+}
+
+    .menu {
+        margin-top: 700px; /* margem ideal só para tablets */
+    }
+}
+
+
+/* CELULARES PEQUENO VERTICAL */
+@media (max-width: 767px) and (orientation: portrait) {
+    body {
+        background-image: url(flork/batalha1.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        margin: 0;
+    }
+
+    .menu {
+        flex-direction: column; /* empilha os botões só no celular */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;      /* espaçamento vertical entre os botões */
+        margin-top: 260px;
+    }
+
+    .menu button {
+        font-size: 24px;
+        padding: 10px 15px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+
+/* CELULARES PEQUENO HORIZONTAL */
+@media (max-width: 767px) and (orientation: landscape) {
+    .menu {
+        flex-direction: row; /* botões lado a lado */
+        margin-top: 80px;
+        gap: 50px;
+    }
+
+    .menu button {
+        font-size: 22px;
+        padding: 8px 15px;
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 0px;
+    }
+}
+
+/* CELULARES GRANDES VERTICAL */
+@media (min-height: 844px) and (max-height: 932px) and (orientation: portrait) {
+
+    body {
+        background-image: url(flork/batalha1.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        margin: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 330px; /* ajuste ideal para celulares altos vertical */
+    }
+
+    .menu button {
+        font-size: 26px;
+        padding: 12px 18px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-top: 40px;
+    }
+}
+
+/* CELULARES GRANDES HORIZONTAL */
+@media (min-width: 844px) and (max-width: 932px) and (orientation: landscape) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        margin: 0;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin-top: 190px;
+    }
+
+    .menu button {
+        font-size: 24px;
+        padding: 10px 16px;
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 0px;
+    }
+}
+
+
+/* RESPONSIVIDADE ESPECÍFICAS */
+
+/* SURFACE DUO HORIZONTAL */
+@media (orientation: landscape) and (max-height: 600px) {
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 190px;
+    }
+
+    .menu button {
+        font-size: 22px;
+        padding: 8px 14px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+}
+
+/* Z FOLD 5 HORIZONTAL */
+@media (max-height: 360px) and (orientation: landscape) {
+    
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;        /* menos espaço entre botões */
+        margin-top: 120px; /* abaixa os botões */
+    }
+
+    .menu button {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}
+
+/* NEST HUB HORIZONTAL */
+@media (orientation: landscape) and (min-width: 1024px) and (max-height: 700px) {
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        margin-top: 300px;
+    }
+
+    .menu button {
+        font-size: 28px;
+        padding: 12px 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+}
+
+/* iPHONE SE HORIZONTAL */
+@media (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+    .menu {
+        margin-top: 90px;  /* reduz bastante para caber */
+        gap: 20px;
+    }
+
+    .menu button {
+        font-size: 20px;  /* ajusta o tamanho dos botões */
+        padding: 6px 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+}
