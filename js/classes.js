@@ -108,16 +108,16 @@ class Fighter extends Sprite {
     }
   }
 
- attack() {
-  if (!this.canAttack) return // se estiver no cooldown, não ataca
-  this.switchSprite('attack1')
-  this.isAttacking = true
-  this.canAttack = false
+  attack() {
+    if (!this.canAttack) return // se estiver no cooldown, não ataca
+    this.switchSprite('attack1')
+    this.isAttacking = true
+    this.canAttack = false
 
-  setTimeout(() => {
-    this.canAttack = true // libera para atacar de novo depois do cooldown
-  }, this.attackCooldown)
-}
+    setTimeout(() => {
+      this.canAttack = true // libera para atacar de novo depois do cooldown
+    }, this.attackCooldown)
+  }
 
 
   update() {

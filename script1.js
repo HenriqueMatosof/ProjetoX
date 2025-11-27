@@ -1,8 +1,16 @@
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
-canvas.width = 1024
-canvas.height = 576
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+
+window.addEventListener("resize", resizeCanvas);
+
+
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 
@@ -16,15 +24,8 @@ const background = new Sprite({
   imageSrc: './img/background.png'
 })
 
-const shop = new Sprite({
-  position: {
-    x: 600,
-    y: 128
-  },
-  imageSrc: './img/shop.png',
-  scale: 2.75,
-  framesMax: 6
-})
+
+
 
 const player = new Fighter({
   position: {
@@ -165,27 +166,39 @@ const keys = {
 }
 
 decreaseTimer()
+const groundLevel = window.innerHeight - 150;
+
+// Corrige o chão do player e enemy a cada frame
+function fixGravity(fighter) {
+  if (fighter.position.y + fighter.height + fighter.velocity.y >= groundLevel) {
+    fighter.velocity.y = 0;
+    fighter.position.y = groundLevel - fighter.height;
+  }
+}
+
 
 function animate() {
   window.requestAnimationFrame(animate)
   c.fillStyle = 'black'
   c.fillRect(0, 0, canvas.width, canvas.height)
   background.update()
-  shop.update()
   c.fillStyle = 'rgba(255, 255, 255, 0.15)'
   c.fillRect(0, 0, canvas.width, canvas.height)
   player.update()
   enemy.update()
+  fixGravity(player);
+  fixGravity(enemy);
 
-// Limite lateral do player
+
+  // Limite lateral do player
   if (player.position.x < 0) player.position.x = 0
-if (player.position.x + player.width > canvas.width)
-  player.position.x = canvas.width - player.width
+  if (player.position.x + player.width > canvas.width)
+    player.position.x = canvas.width - player.width
 
-// Limite lateral do inimigo
-if (enemy.position.x < 0) enemy.position.x = 0
-if (enemy.position.x + enemy.width > canvas.width)
-  enemy.position.x = canvas.width - enemy.width
+  // Limite lateral do inimigo
+  if (enemy.position.x < 0) enemy.position.x = 0
+  if (enemy.position.x + enemy.width > canvas.width)
+    enemy.position.x = canvas.width - enemy.width
 
   player.velocity.x = 0
   enemy.velocity.x = 0
@@ -283,7 +296,7 @@ window.addEventListener('keydown', (event) => {
   if (!player.dead) {
     switch (event.key) {
       case 'd':
-        keys.d.pressed = true   
+        keys.d.pressed = true
         player.lastKey = 'd'
         break
       case 'a':
@@ -292,7 +305,7 @@ window.addEventListener('keydown', (event) => {
         break
       case 'w':
         if (player.velocity.y === 0)
-        player.velocity.y = -20
+          player.velocity.y = -20
         break
       case ' ':
         player.attack()
@@ -312,7 +325,7 @@ window.addEventListener('keydown', (event) => {
         break
       case 'ArrowUp':
         if (enemy.velocity.y === 0)
-        enemy.velocity.y = -20
+          enemy.velocity.y = -20
         break
       case 'ArrowDown':
         enemy.attack()
@@ -349,3 +362,4 @@ function newGame() {
 function goToMenu() {
   window.location.href = "index.html"; //  menu
 }
+
