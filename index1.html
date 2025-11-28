@@ -175,7 +175,7 @@ background:rgba(0,0,0,0.7); color:white; font-size:30px; text-align:center; padd
 <audio id="battleMusic" src="battleMusic/audio/battle.mp3" preload="auto"></audio>
 
 <!-- Botão de mute -->
-<button id="muteBtn" 
+<button id="muteBtn"
   style="position:absolute; top:20px; right:20px; z-index:999;
          font-size:22px; padding:10px; cursor:pointer;">
   🔊
@@ -204,6 +204,15 @@ background:rgba(0,0,0,0.7); color:white; font-size:30px; text-align:center; padd
     muteBtn.textContent = battleMusic.muted ? "🔇" : "🔊";
   });
   battleMusic.volume = 1.0;
+
+// Impede que o botão fique em foco (assim a tecla espaço não muta a música)
+  muteBtn.addEventListener("mousedown", () => {
+  muteBtn.blur();
+});
+muteBtn.addEventListener("click", () => {
+  muteBtn.blur();
+});
+
 </script>
 
   🔊
